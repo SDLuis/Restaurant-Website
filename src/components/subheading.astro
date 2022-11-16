@@ -1,0 +1,10 @@
+---
+import { images } from '../constants'
+
+const { title } = Astro.props
+---
+
+<div style={{ marginBottom: '1rem' }}>
+	<p class='p__cormorant text-white font-Cormorant font-bold tracking-[0.04em] capitalize leading-7 lg:leading-[67px] text-[19px] sm:text-2xl lg:text-3xl'>{title}</p>
+	<img src={images.spoon} alt='spoon_image' class='spoon__img w-11 lg:w-20' />
+</div>
