@@ -21,7 +21,7 @@ const { title } = Astro.props;
 		<meta name='generator' content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class='bg-[url("./bg.png")] bg-cover bg-center bg-repeat bg-fixed font-Cormorant'>
+	<body class='bg-cover bg-center bg-repeat bg-fixed font-Cormorant'>
 		<slot />
 	</body>
 </html>
@@ -29,5 +29,8 @@ const { title } = Astro.props;
 <style>
 	* {
 		scroll-behavior: smooth !important;
+	}
+	body {
+		background-image: url('../assets/bg.png');
 	}
 </style>
