@@ -1,0 +1,110 @@
+---
+import Menu from './icons/menu.astro'
+import { images } from '../constants';
+
+---
+<header class='flex bg-selfblack-50 p-6 justify-between w-full lg:z-10 bg-darkblue'>
+	<a href='/' class='pointer-events-none'>
+		<img
+			class='max-h-8 pointer-events-auto'
+			src={images.gericht}
+			alt=''
+		/>
+		<p class='pointer-events-none fixed z-10 text-transparent'>.</p>
+	</a>
+	<nav class='hidden min-h-screen py-24 peer-checked:block lg:block lg:py-0 lg:min-h-0'>
+		<ul class='flex flex-col justify-center items-center lg:items-start lg:flex-row font-semibold tracking-tight text-xl gap-x-8 text-white [&>li>a]:border-b-2 [&>li>a]:border-b-transparent [&>li>a]:transition-all gap-y-8'>
+			<li class='flex-1'>
+				<a href='#home' class='relative hover:text-selfgrey-50'>
+            Home
+				</a>
+			</li>
+			<li class='relative flex lg:flex-col'>
+				<a
+					href='#about'
+					class='relative hover:text-selfgrey-50 hover:text-red cursor-pointer'
+				>
+          About
+				</a>
+			</li>
+			<li class='relative flex lg:flex-col'>
+				<a
+					href='#menu'
+					class='relative hover:text-selfgrey-50 cursor-pointer'
+				>
+          Menu
+				</a>
+			</li>
+			<li class='relative flex lg:flex-col'>
+				<a
+					href='#awards'
+					class='relative hover:text-selfgrey-50 hover:text-red cursor-pointer'
+				>
+          Awards
+				</a>
+			</li>
+			<li class='relative flex lg:flex-col'>
+				<a
+					href='#awards'
+					class='relative hover:text-selfgrey-50 hover:text-red cursor-pointer'
+				>
+          Contact
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class='sm:flex hidden justify-end items-center text-white'>
+		<a href='#login' class='leading-7 hover:text-selfgrey-50 font-Opensans font-normal tracking-[0.04em] text-base capitalize'>Log In / Registration</a>
+		<div class='w-[2px] h-[30px] bg-selfgrey-50 mx-4' />
+		<a href='/' class='leading-7 hover:text-selfgrey-50 font-Opensans font-normal tracking-[0.04em] text-base capitalize'>Book Table</a>
+	</div>
+
+	<input type='checkbox' id='menu' hidden class='peer ' />
+	<label
+		for='menu'
+		class='relative z-50 lg:hidden peer-checked:[&>.first]:hidden peer-checked:[&>.last]:block text-blue-800'
+	>
+		<Menu />
+	</label>
+	<nav class='absolute top-0 left-0 right-0 z-40 hidden min-h-screen py-24 bg-black peer-checked:block lg:hidden lg:py-0 lg:min-h-0'>
+		<ul class='flex flex-col justify-center items-center lg:items-start lg:flex-row font-semibold tracking-tight text-xl gap-x-8 text-white [&>li>a]:border-b-2 [&>li>a]:border-b-transparent [&>li>a]:transition-all gap-y-8'>
+			<li class='flex-1'>
+				<a href='#home' class='relative hover:text-selfgrey-50'>
+            Home
+				</a>
+			</li>
+			<li class='relative flex lg:flex-col'>
+				<a
+					href='#about'
+					class='relative hover:text-selfgrey-50 hover:text-red cursor-pointer'
+				>
+          About
+				</a>
+			</li>
+			<li class='relative flex lg:flex-col'>
+				<a
+					href='#menu'
+					class='relative hover:text-selfgrey-50 cursor-pointer'
+				>
+          Menu
+				</a>
+			</li>
+			<li class='relative flex lg:flex-col'>
+				<a
+					href='#awards'
+					class='relative hover:text-selfgrey-50 hover:text-red cursor-pointer'
+				>
+          Awards
+				</a>
+			</li>
+			<li class='relative flex lg:flex-col'>
+				<a
+					href='#awards'
+					class='relative hover:text-selfgrey-50 hover:text-red cursor-pointer'
+				>
+          Contact
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
