@@ -1,0 +1,29 @@
+---
+import { images } from '../constants'
+---
+
+<div class='relative flex min-h-screen justify-center items-center py-16 px-8 md:p-16 lg:py-16 lg:px-24' id='about'>
+	<div class='absolute nset-0 flex justify-center items-center'>
+		<img class='z-0 w-[80%] h-[320px] sm:w-[280px] sm:h-[295px]' src={images.G} alt='G_overlay' />
+	</div>
+
+	<div class='flex-col lg:flex-row z-20 w-full flex justify-center items-center'>
+		<div class='app__aboutus-content_about flex flex-1 justify-end flex-col items-end text-right'>
+			<h1 class='headtext__cormorant text-[45px] leading-[70px] sm:text-[64px] sm:leading-[83.2px] font-Cormorant text-golden-50 capitalize tracking-[0.04em]'>About Us</h1>
+			<img src={images.spoon} alt='about_spoon' class='spoon__img w-11 lg:w-20' />
+			<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+			<button type='button' class='custom__button bg-crimson-50 text-selfblack-50 font-Cormorant tracking-[0.04em] leading-7 rounded-[1px] border-none cursor-pointer outline-none py-2 px-6 font-bold text-base lg:text-lg'>Know More</button>
+		</div>
+
+		<div class='app__aboutus-content_knife my-16 lg:my-8 mx-16 flex justify-center items-center'>
+			<img class='h-[710px]' src={images.knife} alt='about_knife' />
+		</div>
+
+		<div class='app__aboutus-content_history flex flex-1 justify-start items-start flex-col text-left'>
+			<h1 class='headtext__cormorant text-[45px] leading-[70px] sm:text-[64px] sm:leading-[83.2px] font-Cormorant text-golden-50 capitalize tracking-[0.04em]'>Our History</h1>
+			<img src={images.spoon} alt='about_spoon' class='spoon__img w-11 lg:w-20' />
+			<p class='p__opensans leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+			<button type='button' class='custom__button bg-crimson-50 text-selfblack-50 font-Cormorant tracking-[0.04em] leading-7 rounded-[1px] border-none cursor-pointer outline-none py-2 px-6 font-bold text-base lg:text-lg'>Know More</button>
+		</div>
+	</div>
+</div>
