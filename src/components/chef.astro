@@ -1,0 +1,28 @@
+---
+import { images } from "../constants"
+import SubHeading from "./subheading.astro"
+---
+
+<div class="flex flex-col lg:flex-row justify-between min-h-screen items-center py-16 px-8 md:p-16 lg:py-16 lg:px-8 xl:px-24">
+  <div class="flex w-full justify-start mr-2">
+    <img class="lg:w-[80%] w-full" src={images.chef} alt="chef_image" />
+  </div>
+  <div class="app__wrapper_info flex w-full justify-center mt-10 items-start flex-col">
+    <SubHeading title="Chef's word" />
+    <h1 class="text-[45px] leading-[70px] sm:text-[64px] sm:leading-[83.2px] font-Cormorant text-golden-50 capitalize tracking-[0.04em]">What we believe in</h1>
+
+    <div class="flex w-full mt-10 lg:mt-0 flex-col">
+      <div class="flex justify-start items-end">
+        <img class="w-[47px] h-[40px] mb-2 mr-4" src={images.quote} alt="quote_image" />
+        <p class="leading-7 font-Opensans font-normal tracking-[0.04em] text-sm capitalize text-justify text-selfgray-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit.</p>
+      </div>
+      <p class="leading-7 font-Opensans font-normal tracking-[0.04em] text-sm capitalize text-justify text-selfgray-50"> auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc. </p>
+    </div>
+
+    <div class="app__chef-sign w-full mt-6">
+      <p class='font-Cormorant font-normal text-[32px] capitalize leading-[41.6px] tracking-[0.04em] text-golden-50 '>Kevin Luo</p>
+      <p class="leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-4 text-selfgray-50">Chef & Founder</p>
+      <img class="w-[250px] mt-12" src={images.sign} alt="sign_image" />
+    </div>
+  </div>
+</div>
