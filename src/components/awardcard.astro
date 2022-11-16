@@ -1,0 +1,11 @@
+---
+const { award: { imgUrl, title, subtitle } } = Astro.props
+---
+
+<div class='app__laurels_awards-card flex flex-1 justify-start items-start my-1 mx-4 w-full sm:min-w-[230px]'>
+	<img class='w-[50px] h-[50px]' src={imgUrl} alt='awards' />
+	<div class='app__laurels_awards-card_content flex flex-col ml-4'>
+		<p class='font-Cormorant font-normal text-[32px] capitalize leading-[41.6px] tracking-[0.04em] text-golden-50 ' style={{ color: '#DCCA87' }}>{title}</p>
+		<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-4 text-selfgray-50'>{subtitle}</p>
+	</div>
+</div>

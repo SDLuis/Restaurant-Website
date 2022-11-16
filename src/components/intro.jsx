@@ -17,7 +17,7 @@ export default function Intro () {
 				controls={false}
 				muted
 			/>
-			<div className='absolute inset-0 bg-[#000000a6] flex justify-center items-center'>
+			<div className='absolute inset-0 bg-[#000000a6] grid place-items-center'>
 				<div
 					className='cursor-pointer w-[100px] h-[100px] rounded-[50%] border-solid border border-golden-50 flex justify-center items-center'
 					onClick={() => {

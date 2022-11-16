@@ -1,0 +1,20 @@
+---
+import { images, data } from '../constants'
+import SubHeading from './subheading.astro'
+import AwardCard from './awardcard.astro';
+---
+
+<div class='flex flex-col lg:flex-row justify-between items-center min-h-screen py-16 px-8 md:p-16 lg:py-16 lg:px-24'>
+	<div class='flex flex-1 w-full justify-center flex-col items-start' id='awards'>
+		<SubHeading title='Awards & recognition' />
+		<h1 class='text-[45px] leading-[70px] sm:text-[64px] sm:leading-[83.2px] font-Cormorant text-golden-50 capitalize tracking-[0.04em]'>Our Laurels</h1>
+
+		<div class='app__laurels_awards flex justify-start items-center mt-6 flex-col'>
+			{data.awards.map((award) => <AwardCard award={award} key={award.title} />)}
+		</div>
+	</div>
+
+	<div class='flex flex-1 w-full justify-center items-center ml-8'>
+		<img class='w-full lg:w-[80%]' src={images.laurels} alt='laurels_img' />
+	</div>
+</div>
