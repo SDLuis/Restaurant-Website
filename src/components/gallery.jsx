@@ -16,17 +16,17 @@ export default function Gallery () {
 	}
 
 	return (
-		<div className='y-16 px-8 md:p-16 lg:py-16 lg:px-24 h-screen flex flex-col lg:flex-row justify-center items-center bg-selfblack-50'>
+		<div className='py-16 px-8 md:p-16 lg:py-16 lg:px-24 h-screen flex flex-col lg:flex-row justify-center items-center bg-selfblack-50'>
 			<div className='min-w-full md:min-w-[500px] pr-8 flex flex-1 flex-col justify-center items-start'>
-				<div style={{ marginBottom: '1rem' }}>
+				<div className='mt-4 lg:mt-0' style={{ marginBottom: '1rem' }}>
 					<p className='text-white font-Cormorant font-bold tracking-[0.04em] capitalize leading-7 lg:leading-[67px] text-[19px] sm:text-2xl'>Instagram</p>
 					<p><img src={images.spoon} alt='spoon_image' className='w-11 lg:w-20' /></p>
 				</div>
 				<h1 className='text-[45px] leading-[70px] sm:text-[64px] sm:leading-[83.2px] font-Cormorant text-golden-50 capitalize tracking-[0.04em]'>Photo Gallery</h1>
-				<p className='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50' style={{ color: '#AAAAAA', marginTop: '2rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+				<p className='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize mb-4 text-selfgray-50' style={{ color: '#AAAAAA' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
 				<button type='button' className='mt-4 bg-crimson-50 text-selfblack-50 font-Cormorant tracking-[0.04em] leading-7 rounded-[1px] border-none cursor-pointer outline-none py-2 px-6 font-bold text-base lg:text-lg'>View More</button>
 			</div>
-			<div className='my-20 flex flex-1 flex-row relative max-w-full lg:max-w-[50%]'>
+			<div className='my-10 flex flex-1 flex-row relative max-w-full lg:max-w-[50%]'>
 				<div className='scrollbar-hide flex flex-row w-max overflow-x-auto' ref={scrollRef}>
 					{[images.gallery01, images.gallery02, images.gallery03, images.gallery04].map((image, index) => (
 						<div className='group relative min-w-[301px] h-[447px] mr-4 lg:mr-8 flex justify-center items-center' key={`gallery_image-${index + 1}`}>
