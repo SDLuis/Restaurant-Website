@@ -1,0 +1,46 @@
+---
+import { images } from '../constants'
+import { FillInstagram, Twitter, Facebook } from './icons/icons'
+import FooterOverlay from './footeroverlay.astro'
+import Newsletter from './newsletter.astro';
+---
+
+<div class='relative w-full z-10 flex justify-start flex-col items-center pt-0 py-16 px-8 md:p-16 lg:pt-16 lg:px-24' id='login'>
+	<FooterOverlay />
+	<Newsletter />
+	<div class='flex-col p-0 flex w-full justify-between lg:flex-row lg:items-start mt-20 lg:px-8'>
+		<div class='flex-1 m-4 text-center'>
+			<h1 class='font-Cormorant text-white font-normal capitalize mb-4 text-[32px] leading-[41.6px]'>Contact Us</h1>
+			<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>9 W 53rd St, New York, NY 10019, USA</p>
+			<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>+1 212-344-1230</p>
+			<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>+1 212-555-1230</p>
+		</div>
+
+		<div class='justify-center flex flex-col flex-1 m-4 text-center'>
+			<div class='flex justify-center'>
+				<img class='w-[210px] mb-3' src={images.gericht} alt='footer_logo' />
+			</div>
+			<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
+			<div class='flex justify-center'>
+				<img class='w-[45px]' src={images.spoon} alt='spoon__img' />
+			</div>
+			<div class='flex gap-8 justify-center my-8'>
+				<Facebook />
+				<Twitter />
+				<FillInstagram />
+			</div>
+		</div>
+
+		<div class='flex-1 m-4 text-center'>
+			<h1 class='font-Cormorant text-white font-normal capitalize mb-4 text-[32px] leading-[41.6px]'>Working Hours</h1>
+			<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>Monday-Friday:</p>
+			<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>08:00 am - 12:00 am</p>
+			<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>Saturday-Sunday:</p>
+			<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>07:00 am - 11:00 pm</p>
+		</div>
+	</div>
+
+	<div class='mt-8'>
+		<p class='leading-7 font-Opensans font-normal tracking-[0.04em] text-base capitalize my-8 text-selfgray-50'>2022 Gericht. All Rights reserved.</p>
+	</div>
+</div>
