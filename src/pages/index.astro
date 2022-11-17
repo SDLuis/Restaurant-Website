@@ -7,6 +7,7 @@ import Menu from '../components/menu.astro'
 import Chef from '../components/chef.astro'
 import Intro from '../components/intro'
 import Laurels from '../components/laurels.astro'
+import Gallery from '../components/gallery'
 ---
 
 <Layout title='Gericht' description='Beautiful Restaurant Website'>
@@ -17,4 +18,5 @@ import Laurels from '../components/laurels.astro'
 	<Chef />
 	<Intro client:visible />
 	<Laurels />
+	<Gallery client:visible />
 </Layout>

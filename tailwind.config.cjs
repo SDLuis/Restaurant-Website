@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 module.exports = {
+	mode: 'jit',
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
@@ -23,5 +25,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: []
+	plugins: [require('tailwind-scrollbar-hide')]
 }
